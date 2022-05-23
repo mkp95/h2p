@@ -23,8 +23,8 @@ $(document).ready(function() {
     })
     if (metho === "POST" || metho === "PUT") {
       data = t.pop();
-      $("#code").text("$u = '" + url + "';\n$h = [" + h + "];\n$d = '" + data + "';\n$res = http($u,$h,'" + metho + "',$d);");
-    } else $("#code").text("$u = '" + url + "';\n$h = [" + h + "];\n$res = http($u,$h,'" + metho + "');");
+      $("#code").val("$u = '" + url + "';\n$h = [" + h + "];\n$d = '" + data + "';\n$res = http($u,$h,'" + metho + "',$d);");
+    } else $("#code").val("$u = '" + url + "';\n$h = [" + h + "];\n$res = http($u,$h,'" + metho + "');");
   });
 });
 
