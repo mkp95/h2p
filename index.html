@@ -37,9 +37,9 @@ div {
 Convert to PHP
 </button>
 
-<br><textarea id="code" rows=10 cols=50></textarea><br>
+<br><textarea id="code" rows=10 cols=50 onclick='this.focus();this.select();document.execCommand('copy');console.log("Copied");'></textarea><br>
 
-<textarea id='http' rows=10 cols=50>function http($url,$head,$method="GET",$data="",$h=0){
+<textarea id='http' rows=10 cols=50 onclick='this.focus();this.select();document.execCommand('copy');console.log("Copied");'>function http($url,$head,$method="GET",$data="",$h=0){
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
